@@ -1,6 +1,13 @@
-# cmake-project-generator
-Python file which generates a cmake project
+# cmaker
+CLI to generate cmake project
 
 ## Usage
 
-python3 generate.py -n name_of_the_project -t lib_or_exec -s 11 -c_v cmake_version
+### Linux
+
+1. Clone the repository
+2. Open your terminal and type `bash ./install.sh`
+3. After that open and close the terminal and type `cmaker -h` and see help
+
+In case of error try adding ~/bin to .bashrc.
+Refer to this link https://askubuntu.com/questions/402353/how-to-add-home-username-bin-to-path  
