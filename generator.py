@@ -1,6 +1,4 @@
 import argparse
-import subprocess
-
 
 parser = argparse.ArgumentParser(description="Generate C++ CMakeProject based on arguments provided")
 parser.add_argument('-n','--name',help="Name of the project",type=str, required=True)
