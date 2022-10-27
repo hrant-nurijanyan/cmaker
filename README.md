@@ -3,6 +3,11 @@ CLI to generate cmake project
 
 ## Usage
 
+`cmaker name_of_the_project` Creates an executable cmake project
+`cmaker name_of_the_project -l` Creates a static library cmake project
+`cmaker name_of_the_project -s 11` Creates an executable cmake project with C++11 standard
+`cmaker name_of_the_project -cv 3.24` Creantes an executable cmake project with cmake version 3.24
+
 ### Linux
 
 To install
