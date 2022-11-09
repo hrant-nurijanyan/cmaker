@@ -17,7 +17,7 @@ parser.add_argument(
     '-l', '--lib', help="If provided a static library cmake is generated", action='store_true')
 
 standards = ['03', '11', '14', '17', '20', '23']
-templates = ['clean']
+templates = ['clean','gl']
 
 args = parser.parse_args()
 
