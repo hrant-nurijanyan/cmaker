@@ -18,6 +18,7 @@ To install
 1. Clone the repository and navigate there.
 2. Open your terminal and type
 ```
+git clone https://github.com/mr-gri3ves/cmaker.git
 cd cmaker
 sudo chmod +x generator.py
 sudo mkdir -p ~/.local/share/cmaker
