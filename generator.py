@@ -5,6 +5,10 @@ import os
 from pathlib import Path
 import shutil
 
+def get_cmake_version():
+    
+    return(version)
+
 parser = argparse.ArgumentParser(
     description="Generate C++ CMakeProject based on arguments provided")
 parser.add_argument('name', help="Name of the project")
@@ -35,10 +39,17 @@ if args.template is not None:
 else:
     args.template = 'clean'
 
+# If cmake version is none default to system installed cmake version
+if args.cmake_version is None:
+    import subprocess
+    output = subprocess.check_output(['cmake', '--version']).decode('utf-8')
+    line = output.splitlines()[0]
+    args.cmake_version = line.split()[2]
+
 name = args.name
 isLib = args.lib
 standard = args.standard
-cmake_version = args.cmake_version or '3.22.1'  # defaulting to cmake 3.22.1
+cmake_version = args.cmake_version
 template = args.template
 
 # Removing project directory if exists

@@ -16,15 +16,23 @@ CLI to generate cmake project
 To install
 
 1. Clone the repository and navigate there.
-2. Open your terminal and type `bash ./install.sh`
-3. After that open and close the terminal and type `cmaker -h` and see help
-
-In case of error try adding ~/.bin to .bashrc.
-Refer to this link https://askubuntu.com/questions/402353/how-to-add-home-username-bin-to-path  
+2. Open your terminal and type
+```
+cd cmaker
+sudo chmod +x generate.py
+sudo mkdir -p ~/.local/share/cmaker
+sudo cp -r templates ~/.local/share/cmaker
+sudo cp generate.py /usr/bin/cmaker
+```
+3. After that open and close the terminal and type `cmaker -h` and see help  
 
 To uninstall
 
-1. Navigate to the cloned repository
-2. Open your terminal and type `bash ./uninstall.sh`
+Open your terminal and type
+
+```
+sudo rm -r ~/.local/share/cmaker
+sudo rm /usr/bin/cmaker
+```
 
 
