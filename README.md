@@ -24,6 +24,7 @@ sudo chmod +x generator.py
 sudo mkdir -p ~/.local/share/cmaker
 sudo cp -r templates ~/.local/share/cmaker
 sudo cp generator.py /usr/bin/cmaker
+cd .. && sudo rm -r cmaker
 ```
 3. After that open and close the terminal and type `cmaker -h` and see help  
 
