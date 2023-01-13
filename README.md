@@ -19,10 +19,10 @@ To install
 2. Open your terminal and type
 ```
 cd cmaker
-sudo chmod +x generate.py
+sudo chmod +x generator.py
 sudo mkdir -p ~/.local/share/cmaker
 sudo cp -r templates ~/.local/share/cmaker
-sudo cp generate.py /usr/bin/cmaker
+sudo cp generator.py /usr/bin/cmaker
 ```
 3. After that open and close the terminal and type `cmaker -h` and see help  
 
