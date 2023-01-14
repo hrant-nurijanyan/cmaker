@@ -4,6 +4,8 @@ project({project_name})
 
 set(CMAKE_CXX_STANDARD, {cxx_standard})
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_{project_type}({project_name} main.cpp)
 
 set(EXT_DEPS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/extDeps)
